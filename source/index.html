@@ -18,8 +18,8 @@
       <h1 class="calculator__title">Калькулятор стоимости</h1>
       <div class="calculator__container">
         <div class="progress-bar">
-          Прогресс расчета стоимости
-          <div class="progress-bar-range" style="top: 0; left: 0; width: 202px;"></div>
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 0;"></div>
+          <div class="progress-bar-text"><span>Прогресс расчета стоимости</span></div>
         </div>
         <form class="form-calculator" action="#">
           <h2 class="form-calculator__title">Что вас интересует?</h2>
@@ -33,7 +33,7 @@
                   <img class="calculator-filter__image" src="images/step-1-photo1@1x.webp" srcset="images/step-1-photo1@2x.webp 2x" width="280" height="140" alt="Загородный дом.">
                 </picture>
                 <label class="control">
-                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation" checked>
                   <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
                     </svg></span>
@@ -60,6 +60,158 @@
               и нажмите кнопку &laquo;Далее&raquo;
             </p>
             <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- 1й этап -->
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 25%;"></div>
+          <div class="progress-bar-text"><span>1&nbsp;</span>из <span>4&nbsp;</span>вопросов</div>
+        </div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title">Выберите кровельный материал</h2>
+          <fieldset class="calculator-filter">
+            <legend class="visually-hidden">Выберите кровельный материал</legend>
+            <ul class="calculator-filter__list calculator-filter__list--step-first">
+              <li class="calculator-filter__item calculator-filter__item--step-first">
+                <picture class="calculator-filter__image calculator-filter__image--step-first">
+                  <source media="(min-width: 1440px)" width="257" height="197" type="image/webp" srcset="images/step-2-photo1@1x.webp 1x, images/step-2-photo1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="257" height="197" type="image/webp" srcset="images/step-2-photo1@1x.webp 1x, images/step-2-photo1@2x.webp 2x">
+                  <img class="calculator-filter__image calculator-filter__image--step-first" src="images/step-2-photo1@1x.webp" srcset="images/step-2-photo1@2x.webp 2x" width="257" height="197" alt="Кровельный материал.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation" checked>
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Профнастил С8</span>
+                </label>
+              </li>
+              <li class="calculator-filter__item calculator-filter__item--step-first">
+                <picture class="calculator-filter__image calculator-filter__image--step-first">
+                  <source media="(min-width: 1440px)" width="257" height="197" type="image/webp" srcset="images/step-2-photo2@1x.webp 1x, images/step-2-photo2@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="257" height="197" type="image/webp" srcset="images/step-2-photo2@1x.webp 1x, images/step-2-photo2@2x.webp 2x">
+                  <img class="calculator-filter__image calculator-filter__image--step-first" src="images/step-2-photo2@1x.webp" srcset="images/step-2-photo2@2x.webp 2x" width="257" height="197" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Профнастил С21</span>
+                </label>
+              </li>
+              <li class="calculator-filter__item calculator-filter__item--step-first">
+                <picture class="calculator-filter__image calculator-filter__image--step-first">
+                  <source media="(min-width: 1440px)" width="257" height="197" type="image/webp" srcset="images/step-2-photo3@1x.webp 1x, images/step-2-photo3@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="257" height="197" type="image/webp" srcset="images/step-2-photo3@1x.webp 1x, images/step-2-photo3@2x.webp 2x">
+                  <img class="calculator-filter__image calculator-filter__image--step-first" src="images/step-2-photo3@1x.webp" srcset="images/step-2-photo3@2x.webp 2x" width="257" height="197" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Металлочерепица</span>
+                </label>
+              </li>
+            </ul>
+            <p class="calculator-filter__text">
+              <strong>Выберите вариант ответа</strong><br>
+              и нажмите кнопку &laquo;Далее&raquo;
+            </p>
+            <div class="wrapper-buttons">
+              <button class="calculator-button calculator-button--secondary-color calculator-button--secondary-position" type="button">Назад</button>
+              <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- 2й этап -->
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 50%;"></div>
+          <div class="progress-bar-text"><span>2&nbsp;</span>из <span>4&nbsp;</span>вопросов</div>
+        </div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title">Выберите тип кровли</h2>
+          <fieldset class="calculator-filter calculator-filter--step-second">
+            <legend class="visually-hidden">Выберите тип кровли</legend>
+            <ul class="calculator-filter__list calculator-filter__list--step-second">
+              <li class="calculator-filter__item calculator-filter__item--step-second">
+                <picture class="calculator-filter__image calculator-filter__image--step-second">
+                  <source media="(min-width: 1440px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo1@1x.webp 1x, images/step-3-photo1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo1@1x.webp 1x, images/step-3-photo1@2x.webp 2x">
+                  <img class="calculator-filter__image calculator-filter__image--step-second" src="images/step-3-photo1@1x.webp" srcset="images/step-3-photo1@2x.webp 2x" width="187" height="144" alt="Кровельный материал.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation" checked>
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Односкатная</span>
+                </label>
+              </li>
+              <li class="calculator-filter__item calculator-filter__item--step-second">
+                <picture class="calculator-filter__image calculator-filter__image--step-second">
+                  <source media="(min-width: 1440px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo2@1x.webp 1x, images/step-3-photo2@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo2@1x.webp 1x, images/step-3-photo2@2x.webp 2x">
+                  <img class="calculator-filter__image calculator-filter__image--step-second" src="images/step-3-photo2@1x.webp" srcset="images/step-3-photo2@2x.webp 2x" width="187" height="144" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Двускатная</span>
+                </label>
+              </li>
+              <li class="calculator-filter__item calculator-filter__item--step-second">
+                <picture class="calculator-filter__image calculator-filter__image--step-second">
+                  <source media="(min-width: 1440px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo3@1x.webp 1x, images/step-3-photo3@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo3@1x.webp 1x, images/step-3-photo3@2x.webp 2x">
+                  <img class="calculator-filter__image calculator-filter__image--step-second" src="images/step-3-photo3@1x.webp" srcset="images/step-3-photo3@2x.webp 2x" width="187" height="144" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Мансардная</span>
+                </label>
+              </li>
+              <li class="calculator-filter__item calculator-filter__item--step-second">
+                <picture class="calculator-filter__image calculator-filter__image--step-second">
+                  <source media="(min-width: 1440px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo4@1x.webp 1x, images/step-3-photo4@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="187" height="144" type="image/webp" srcset="images/step-3-photo4@1x.webp 1x, images/step-3-photo4@2x.webp 2x">
+                  <img class="calculator-filter__image calculator-filter__image--step-second" src="images/step-3-photo4@1x.webp" srcset="images/step-3-photo4@2x.webp 2x" width="187" height="144" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Вальмовая</span>
+                </label>
+              </li>
+            </ul>
+            <p class="calculator-filter__text">
+              <strong>Выберите вариант ответа</strong><br>
+              и нажмите кнопку &laquo;Далее&raquo;
+            </p>
+            <div class="wrapper-buttons">
+              <button class="calculator-button calculator-button--secondary-color calculator-button--secondary-position" type="button">Назад</button>
+              <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+            </div>
+
           </fieldset>
         </form>
       </div>

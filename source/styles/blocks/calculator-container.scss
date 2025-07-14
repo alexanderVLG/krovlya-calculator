@@ -15,6 +15,7 @@
   padding: 7px 25px;
   font-size: 12px;
   text-align: center;
+  height: 32px;
   color: $color-secondary-text;
   line-height: 18px;
   background-color: $bg-progress-bar;
@@ -23,6 +24,13 @@
   @media (min-width: $desktop-width) {
     font-size: 14px;
   }
+}
+
+.progress-bar-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
 }
 
 .progress-bar-range {

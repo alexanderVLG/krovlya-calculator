@@ -1,3 +1,9 @@
+.wrapper-buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+
 .calculator-button {
   padding: 12px 45px;
   max-width: 138px;
@@ -30,5 +36,9 @@
 
   &:hover {
     opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.97);
   }
 }
