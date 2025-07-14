@@ -1,7 +1,11 @@
 .wrapper-buttons {
   display: flex;
-  margin-left: auto;
+  justify-content: center;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
 }
 
 .calculator-button {

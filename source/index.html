@@ -69,8 +69,8 @@
       <h1 class="calculator__title">Калькулятор стоимости</h1>
       <div class="calculator__container">
         <div class="progress-bar">
-          <div class="progress-bar-range" style="top: 0; left: 0; width: 25%;"></div>
-          <div class="progress-bar-text"><span>1&nbsp;</span>из <span>4&nbsp;</span>вопросов</div>
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 20%;"></div>
+          <div class="progress-bar-text"><span>1&nbsp;</span>из <span>5&nbsp;</span>вопросов</div>
         </div>
         <form class="form-calculator" action="#">
           <h2 class="form-calculator__title">Выберите кровельный материал</h2>
@@ -138,8 +138,8 @@
       <h1 class="calculator__title">Калькулятор стоимости</h1>
       <div class="calculator__container">
         <div class="progress-bar">
-          <div class="progress-bar-range" style="top: 0; left: 0; width: 50%;"></div>
-          <div class="progress-bar-text"><span>2&nbsp;</span>из <span>4&nbsp;</span>вопросов</div>
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 40%;"></div>
+          <div class="progress-bar-text"><span>2&nbsp;</span>из <span>5&nbsp;</span>вопросов</div>
         </div>
         <form class="form-calculator" action="#">
           <h2 class="form-calculator__title">Выберите тип кровли</h2>
@@ -202,6 +202,37 @@
                   <span class="control-label">Вальмовая</span>
                 </label>
               </li>
+            </ul>
+            <p class="calculator-filter__text">
+              <strong>Выберите вариант ответа</strong><br>
+              и нажмите кнопку &laquo;Далее&raquo;
+            </p>
+            <div class="wrapper-buttons">
+              <button class="calculator-button calculator-button--secondary-color calculator-button--secondary-position" type="button">Назад</button>
+              <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- 3й этап -->
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 50%;"></div>
+          <div class="progress-bar-text"><span>3&nbsp;</span>из <span>5&nbsp;</span>вопросов</div>
+        </div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title">Введите размеры кровли</h2>
+          <fieldset class="calculator-filter">
+            <legend class="visually-hidden">Введите размеры кровли</legend>
+            <ul class="calculator-filter__list calculator-filter__list--step-second">
+              <li class="calculator-filter__item"><label class="calculator-filter__label"><input class="calculator-filter__input" type="number" name="roof-dimensions" placeholder="Длина ската, м*"></label></li>
+              <li class="calculator-filter__item"><label class="calculator-filter__label"><input class="calculator-filter__input" type="number" name="roof-dimensions" placeholder="Длина конька, м*"></label></li>
+              <li class="calculator-filter__item"><label class="calculator-filter__label"><input class="calculator-filter__input" type="number" name="roof-dimensions" placeholder="Расстояние от карниза до..."></label></li>
+              <li class="calculator-filter__item"><label class="calculator-filter__label"><input class="calculator-filter__input" type="number" name="roof-dimensions" placeholder="Длина свеса, м*"></label></li>
             </ul>
             <p class="calculator-filter__text">
               <strong>Выберите вариант ответа</strong><br>
