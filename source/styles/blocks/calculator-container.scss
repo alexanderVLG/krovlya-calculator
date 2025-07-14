@@ -9,6 +9,7 @@
 }
 
 .progress-bar {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 7px 25px;
@@ -22,4 +23,11 @@
   @media (min-width: $desktop-width) {
     font-size: 14px;
   }
+}
+
+.progress-bar-range {
+  position: absolute;
+  height: 32px;
+  background-color: #d4ecc4;
+  border-radius: 8px;
 }

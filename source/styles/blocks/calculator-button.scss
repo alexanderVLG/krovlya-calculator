@@ -9,6 +9,8 @@
   text-transform: uppercase;
   border-radius: 132px;
   border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 
   &--primary-color {
     background-color: $bg-button-primary-color;
@@ -24,5 +26,9 @@
     @media (min-width: $tablet-width) {
       justify-self: end;
     }
+  }
+
+  &:hover {
+    opacity: 0.9;
   }
 }
