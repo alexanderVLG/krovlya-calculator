@@ -1,0 +1,28 @@
+.calculator-button {
+  padding: 12px 45px;
+  max-width: 138px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 132px;
+  border: none;
+
+  &--primary-color {
+    background-color: $bg-button-primary-color;
+  }
+
+  &--secondary-color {
+    background-color: $bg-button-secondary-color;
+  }
+
+  &--primary-position {
+    justify-self: center;
+
+    @media (min-width: $tablet-width) {
+      justify-self: end;
+    }
+  }
+}

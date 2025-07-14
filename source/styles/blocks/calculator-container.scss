@@ -1,0 +1,25 @@
+.calculator__container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 50px;
+  }
+}
+
+.progress-bar {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 7px 25px;
+  font-size: 12px;
+  text-align: center;
+  color: $color-secondary-text;
+  line-height: 18px;
+  background-color: $bg-progress-bar;
+  border-radius: 8px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
+}

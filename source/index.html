@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="/source/fonts/victor-mono/VictorMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/victor-mono/VictorMono-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/victor-mono/VictorMono-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body class="page__body">
+  <main class="main-container">
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">Прогресс расчета стоимости</div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title">Что вас интересует?</h2>
+          <fieldset class="calculator-filter">
+            <legend class="visually-hidden">Расчет стоимости кровли или фасада</legend>
+            <ul class="calculator-filter__list">
+              <li class="calculator-filter__item">
+                <picture class="calculator-filter__image">
+                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo1@1x.webp 1x, images/step-1-photo1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo1@1x.webp 1x, images/step-1-photo1@2x.webp 2x">
+                  <img class="calculator-filter__image" src="images/step-1-photo1@1x.webp" srcset="images/step-1-photo1@2x.webp 2x" width="280" height="140" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Расчет стоимости кровли</span>
+                </label>
+              </li>
+              <li class="calculator-filter__item">
+                <picture class="calculator-filter__image">
+                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo2@1x.webp 1x, images/step-1-photo2@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo2@1x.webp 1x, images/step-1-photo2@2x.webp 2x">
+                  <img class="calculator-filter__image" src="images/step-1-photo2@1x.webp" srcset="images/step-1-photo2@2x.webp 2x" width="280" height="140" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Расчет стоимости фасада</span>
+                </label>
+              </li>
+            </ul>
+            <p class="calculator-filter__text">
+              <strong>Выберите вариант ответа</strong><br>
+              и нажмите кнопку &laquo;Далее&raquo;
+            </p>
+            <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

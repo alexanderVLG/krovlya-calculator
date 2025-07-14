@@ -1,0 +1,16 @@
+/* GLOBAL */
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+
+/* BLOCKS */
+@import "./blocks/page.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/calculator.scss";
+@import "./blocks/calculator-container.scss";
+@import "./blocks/form-calculator.scss";
+@import "./blocks/calculator-filter.scss";
+@import "./blocks/calculator-button.scss";
+

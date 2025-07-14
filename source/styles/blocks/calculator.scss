@@ -1,0 +1,19 @@
+.calculator {
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 910px;
+}
+
+.calculator__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: $color-base-text;
+
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+  }
+}
