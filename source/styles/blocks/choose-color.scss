@@ -24,6 +24,17 @@
   max-width: 810px;
   overflow-y: auto;
 
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #e4e6ea;
+    border-radius: 53px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     max-height: 220px;
