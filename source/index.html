@@ -64,6 +64,7 @@
         </form>
       </div>
     </section>
+    <!-- Кровля этапы -->
     <!-- 1й этап -->
     <section class="calculator">
       <h1 class="calculator__title">Калькулятор стоимости</h1>
@@ -221,7 +222,7 @@
       <h1 class="calculator__title">Калькулятор стоимости</h1>
       <div class="calculator__container">
         <div class="progress-bar">
-          <div class="progress-bar-range" style="top: 0; left: 0; width: 40%;"></div>
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 60%;"></div>
           <div class="progress-bar-text"><span>3&nbsp;</span>из <span>5&nbsp;</span>вопросов</div>
         </div>
         <form class="form-calculator" action="#">
@@ -260,7 +261,7 @@
       <h1 class="calculator__title">Калькулятор стоимости</h1>
       <div class="calculator__container">
         <div class="progress-bar">
-          <div class="progress-bar-range" style="top: 0; left: 0; width: 60%;"></div>
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 80%;"></div>
           <div class="progress-bar-text"><span>4&nbsp;</span>из <span>5&nbsp;</span>вопросов</div>
         </div>
         <form class="form-calculator" action="#">
@@ -277,15 +278,6 @@
                     </svg></span>
                   <span class="control-label">RAL 1014<br>Слоновая кость</span>
                 </label>
-              <li class="choose-color__item">
-                <div class="choose-color__block choose-color__block--color-one"></div>
-                <label class="control">
-                  <input class="control-input visually-hidden" type="radio" name="choose-color">
-                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
-                    </svg></span>
-                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
-                </label>
               </li>
               <li class="choose-color__item">
                 <div class="choose-color__block choose-color__block--color-one"></div>
@@ -387,6 +379,15 @@
                   <span class="control-label">RAL 1014<br>Слоновая кость</span>
                 </label>
               </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
               </li>
             </ul>
             <p class="calculator-filter__text">
@@ -397,6 +398,50 @@
               <button class="calculator-button calculator-button--secondary-color calculator-button--secondary-position" type="button">Назад</button>
               <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
             </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- 5й этап -->
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 100%;"></div>
+          <div class="progress-bar-text"><span>5&nbsp;</span>из <span>5&nbsp;</span>вопросов</div>
+        </div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title form-calculator__title--align-left">Расчетная стоимость кровли</h2>
+          <fieldset class="calculator-roof-total">
+            <legend class="visually-hidden">Расчетная стоимость кровли</legend>
+            <ul class="calculator-roof-total__list">
+              <li class="calculator-roof-total__item">
+                <dl class="roof-description">
+                  <dt class="roof-description__term">Тип кровли:</dt>
+                  <dd class="roof-description__definition">односкатная</dd>
+                  <dt class="roof-description__term">Кровельный материал:</dt>
+                  <dd class="roof-description__definition">профлист</dd>
+                  <dt class="roof-description__term">Цвет:</dt>
+                  <dd class="roof-description__definition">RAL 1015 Светлая слоновая кость</dd>
+                </dl>
+              </li>
+              <li class="calculator-roof-total__item">
+                <label>
+                  <input class="calculator-roof-total__input" type="text" placeholder="Ваше имя" name="calculator-roof-total__name">
+                </label>
+                <label>
+                  <input class="calculator-roof-total__input" type="email" placeholder="Ваше имя" name="calculator-roof-total__email">
+                </label>
+                <label>
+                  <input class="calculator-roof-total__input" type="phone" placeholder="Ваше имя" name="calculator-roof-total__phone">
+                </label>
+              </li>
+            </ul>
+
+            <button class="calculator-button calculator-button--font-size calculator-button--width calculator-button--primary-color calculator-button--primary-position" type="button">
+              Отправить для детального расчета
+            </button>
 
           </fieldset>
         </form>

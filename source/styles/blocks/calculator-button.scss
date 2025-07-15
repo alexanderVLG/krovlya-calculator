@@ -22,6 +22,20 @@
   outline: none;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
+  box-sizing: border-box;
+
+  &--width {
+    width: fit-content;
+    max-width: 359px;
+
+    @media (min-width: $tablet-width) {
+      width: 359px;
+    }
+  }
+
+  &--font-size {
+    font-size: 14px;
+  }
 
   &--primary-color {
     background-color: $bg-button-primary-color;
