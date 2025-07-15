@@ -1,0 +1,24 @@
+.roof-dimensions-input {
+  padding: 16px 20px;
+  min-width: 188px;
+  font-family: $primary-font;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #b9b9b9;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  background-color: #f9fafb;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  outline: none;
+
+  &:hover {
+    border-color: $bg-button-primary-color;
+  }
+
+  &:focus-visible {
+    border-color: $bg-button-primary-color;
+  }
+}

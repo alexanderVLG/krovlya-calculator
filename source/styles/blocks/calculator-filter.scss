@@ -23,6 +23,7 @@
   max-height: 500px;
   overflow-y: auto;
 
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-template-columns: 1fr 1fr;
@@ -115,10 +116,8 @@
   }
 }
 
-.control-input[type="radio"] + .control-mark {
-  &:focus-visible {
-    outline: 3px solid #038b2a;
-  }
+.control-input[type="radio"]:focus-visible + .control-mark {
+  outline: 3px solid #038b2a;
 }
 
 .control-input[type="radio"]:checked + .control-mark {
@@ -133,6 +132,13 @@
   display: block;
   text-align: center;
   font-size: 14px;
+}
+
+.calculator-filter__roof-input-label span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: $color-secondary-text;
 }
 
 .calculator-filter__text {
@@ -156,5 +162,18 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+}
+
+.calculator-filter__roof-dimensions {
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

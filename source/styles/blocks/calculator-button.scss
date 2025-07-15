@@ -19,6 +19,7 @@
   text-transform: uppercase;
   border-radius: 132px;
   border: none;
+  outline: none;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 
@@ -40,6 +41,10 @@
 
   &:hover {
     opacity: 0.9;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $bg-button-primary-color;
   }
 
   &:active {
