@@ -1,0 +1,110 @@
+.calculator-roof-total {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 25px;
+  border: none;
+}
+
+.calculator-roof-total__list {
+  margin: 0;
+  padding-left: 0;
+  display: grid;
+  gap: 28px;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.calculator-roof-total__item--input-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  max-width: 450px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 358px;
+  }
+}
+
+.roof-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 450px;
+  font-size: 10px;
+  line-height: 12px;
+  color: $color-third-text;
+
+  @media (min-width: $desktop-width) {
+    width: 424px;
+    max-width: auto;
+  }
+}
+
+.roof-description__term {
+  padding: 10px 15px;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fafafa;
+  border-left: 1px solid #fafafa;
+
+  &:first-child {
+    background-color: $bg-input;
+  }
+}
+
+.roof-description__definition {
+  margin-left: 0;
+  padding: 10px 15px;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fafafa;
+  border-right: 1px solid #fafafa;
+
+  &:nth-child(2) {
+    background-color: $bg-input;
+  }
+}
+
+.calculator-roof-total__input {
+  padding: 16px 20px;
+  width: 100%;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  color: $input-color-text;
+  background-color: $bg-input;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+}
+
+.calculator-roof-total__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.calculator-roof-total__text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: $total-price-color;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+}
+
+.calculator-roof-total__notice {
+  margin: 0;
+  padding-right: 30px;
+  text-align: left;
+  max-width: 424px;
+  font-size: 10px;
+  line-height: 16px;
+  color: $color-third-text;
+}

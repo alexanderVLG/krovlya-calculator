@@ -426,23 +426,80 @@
                   <dd class="roof-description__definition">RAL 1015 Светлая слоновая кость</dd>
                 </dl>
               </li>
-              <li class="calculator-roof-total__item">
+              <li class="calculator-roof-total__item calculator-roof-total__item--input-flex">
                 <label>
                   <input class="calculator-roof-total__input" type="text" placeholder="Ваше имя" name="calculator-roof-total__name">
                 </label>
                 <label>
-                  <input class="calculator-roof-total__input" type="email" placeholder="Ваше имя" name="calculator-roof-total__email">
+                  <input class="calculator-roof-total__input" type="email" placeholder="Ваша почта" name="calculator-roof-total__email">
                 </label>
                 <label>
-                  <input class="calculator-roof-total__input" type="phone" placeholder="Ваше имя" name="calculator-roof-total__phone">
+                  <input class="calculator-roof-total__input" type="phone" placeholder="Телефон" name="calculator-roof-total__phone">
                 </label>
               </li>
             </ul>
+            <div class="calculator-roof-total__wrapper">
+              <p class="calculator-roof-total__text">Итого: <span id="calculator-total-price">301 780</span> руб.</p>
+              <button class="calculator-button calculator-button--font-size calculator-button--width calculator-button--primary-color calculator-button--primary-position" type="button">
+                Отправить для детального расчета
+              </button>
+            </div>
+            <p class="calculator-roof-total__notice">
+              Все расчеты являются приблизительными и приводятся в качестве справочного материала. Для получения точной информации по стоимости необходимо обратиться к специалистам компании.
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
 
-            <button class="calculator-button calculator-button--font-size calculator-button--width calculator-button--primary-color calculator-button--primary-position" type="button">
-              Отправить для детального расчета
-            </button>
-
+    <!-- Фасад этапы -->
+    <!-- 1й этап -->
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 33%;"></div>
+          <div class="progress-bar-text"><span>1&nbsp;</span>из <span>3&nbsp;</span>вопросов</div>
+        </div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title">Выберите вид фасадного материала</h2>
+          <fieldset class="calculator-filter">
+            <legend class="visually-hidden">Выберите вид фасадного материала</legend>
+            <ul class="calculator-filter__list">
+              <li class="calculator-filter__item">
+                <picture class="calculator-filter__image">
+                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo1@1x.webp 1x, images/step-1-photo1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo1@1x.webp 1x, images/step-1-photo1@2x.webp 2x">
+                  <img class="calculator-filter__image" src="images/step-1-photo1@1x.webp" srcset="images/step-1-photo1@2x.webp 2x" width="280" height="140" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation" checked>
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Расчет стоимости кровли</span>
+                </label>
+              </li>
+              <li class="calculator-filter__item">
+                <picture class="calculator-filter__image">
+                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo2@1x.webp 1x, images/step-1-photo2@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo2@1x.webp 1x, images/step-1-photo2@2x.webp 2x">
+                  <img class="calculator-filter__image" src="images/step-1-photo2@1x.webp" srcset="images/step-1-photo2@2x.webp 2x" width="280" height="140" alt="Загородный дом.">
+                </picture>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation">
+                  <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">Расчет стоимости фасада</span>
+                </label>
+              </li>
+            </ul>
+            <p class="calculator-filter__text">
+              <strong>Выберите вариант ответа</strong><br>
+              и нажмите кнопку &laquo;Далее&raquo;
+            </p>
+            <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
           </fieldset>
         </form>
       </div>

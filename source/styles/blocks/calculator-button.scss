@@ -29,6 +29,10 @@
     max-width: 359px;
 
     @media (min-width: $tablet-width) {
+      width: 350px;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 359px;
     }
   }
