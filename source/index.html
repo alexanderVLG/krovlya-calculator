@@ -468,30 +468,30 @@
             <ul class="calculator-filter__list">
               <li class="calculator-filter__item">
                 <picture class="calculator-filter__image">
-                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo1@1x.webp 1x, images/step-1-photo1@2x.webp 2x">
-                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo1@1x.webp 1x, images/step-1-photo1@2x.webp 2x">
-                  <img class="calculator-filter__image" src="images/step-1-photo1@1x.webp" srcset="images/step-1-photo1@2x.webp 2x" width="280" height="140" alt="Загородный дом.">
+                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/fasad-step1-photo1@1x.webp 1x, images/fasad-step1-photo1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/fasad-step1-photo1@1x.webp 1x, images/fasad-step1-photo1@2x.webp 2x">
+                  <img class="calculator-filter__image" src="images/fasad-step1-photo1@1x.webp" srcset="images/fasad-step1-photo1@2x.webp 2x" width="280" height="140" alt="Металлосайдинг.fasad-">
                 </picture>
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="type-calculation" checked>
                   <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
                     </svg></span>
-                  <span class="control-label">Расчет стоимости кровли</span>
+                  <span class="control-label">Металлосайдинг &laquo;Корабельная доска&raquo;</span>
                 </label>
               </li>
               <li class="calculator-filter__item">
                 <picture class="calculator-filter__image">
-                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo2@1x.webp 1x, images/step-1-photo2@2x.webp 2x">
-                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/step-1-photo2@1x.webp 1x, images/step-1-photo2@2x.webp 2x">
-                  <img class="calculator-filter__image" src="images/step-1-photo2@1x.webp" srcset="images/step-1-photo2@2x.webp 2x" width="280" height="140" alt="Загородный дом.">
+                  <source media="(min-width: 1440px)" width="395" height="197" type="image/webp" srcset="images/fasad-step1-photo2@1x.webp 1x, images/fasad-step1-photo2@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="395" height="197" type="image/webp" srcset="images/fasad-step1-photo2@1x.webp 1x, images/fasad-step1-photo2@2x.webp 2x">
+                  <img class="calculator-filter__image" src="images/fasad-step1-photo2@1x.webp" srcset="images/fasad-step1-photo2@2x.webp 2x" width="280" height="140" alt="Металлосайдинг.">
                 </picture>
                 <label class="control">
                   <input class="control-input visually-hidden" type="radio" name="type-calculation">
                   <span class="control-mark"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
                     </svg></span>
-                  <span class="control-label">Расчет стоимости фасада</span>
+                  <span class="control-label">Металлосайдинг &laquo;Бревно&raquo;</span>
                 </label>
               </li>
             </ul>
@@ -500,6 +500,192 @@
               и нажмите кнопку &laquo;Далее&raquo;
             </p>
             <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- 2й этап -->
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 66%;"></div>
+          <div class="progress-bar-text"><span>2&nbsp;</span>из <span>3&nbsp;</span>вопросов</div>
+        </div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title">Введите размеры кровли</h2>
+          <fieldset class="calculator-filter">
+            <legend class="visually-hidden">Введите размеры кровли</legend>
+            <ul class="calculator-filter__list calculator-filter__roof-dimensions">
+              <li class="calculator-filter__item"><label class="calculator-filter__roof-input-label">
+                  <span>A.</span><br>
+                  <input class="roof-dimensions-input" type="number" name="roof-dimensions" placeholder="Длина ската, м*" min="0.1" max="1000000"></label></li>
+              <li class="calculator-filter__item"><label class="calculator-filter__roof-input-label">
+                  <span>B.</span><br>
+                  <input class="roof-dimensions-input" type="number" name="roof-dimensions" placeholder="Длина конька, м*" min="0.1" max="1000000"></label></li>
+              <li class="calculator-filter__item"><label class="calculator-filter__roof-input-label">
+                  <span>C.</span><br>
+                  <input class="roof-dimensions-input" type="number" name="roof-dimensions" placeholder="Расстояние от карниза до..." min="0.1" max="1000000"></label></li>
+              <li class="calculator-filter__item"><label class="calculator-filter__roof-input-label">
+                  <span>D.</span><br>
+                  <input class="roof-dimensions-input" type="number" name="roof-dimensions" placeholder="Длина свеса, м*" min="0.1" max="1000000"></label></li>
+            </ul>
+            <p class="calculator-filter__text">
+              <strong>Выберите вариант ответа</strong><br>
+              и нажмите кнопку &laquo;Далее&raquo;
+            </p>
+            <div class="wrapper-buttons">
+              <button class="calculator-button calculator-button--secondary-color calculator-button--secondary-position" type="button">Назад</button>
+              <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- 3й этап -->
+    <section class="calculator">
+      <h1 class="calculator__title">Калькулятор стоимости</h1>
+      <div class="calculator__container">
+        <div class="progress-bar">
+          <div class="progress-bar-range" style="top: 0; left: 0; width: 100%;"></div>
+          <div class="progress-bar-text"><span>3&nbsp;</span>из <span>3&nbsp;</span>вопросов</div>
+        </div>
+        <form class="form-calculator" action="#">
+          <h2 class="form-calculator__title">Выберите цвет материала</h2>
+          <fieldset class="choose-color">
+            <legend class="visually-hidden">Выберите цвет материала</legend>
+            <ul class="choose-color__list">
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="type-calculation" checked>
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+              <li class="choose-color__item">
+                <div class="choose-color__block choose-color__block--color-one"></div>
+                <label class="control">
+                  <input class="control-input visually-hidden" type="radio" name="choose-color">
+                  <span class="control-mark control-mark--choose-color"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.18176 3.72731L4.18176 6.72731L9.36358 1.27277" stroke-width="1.09091" />
+                    </svg></span>
+                  <span class="control-label">RAL 1014<br>Слоновая кость</span>
+                </label>
+              </li>
+            </ul>
+            <p class="calculator-filter__text">
+              <strong>Выберите вариант ответа</strong><br>
+              и нажмите кнопку &laquo;Далее&raquo;
+            </p>
+            <div class="wrapper-buttons">
+              <button class="calculator-button calculator-button--secondary-color calculator-button--secondary-position" type="button">Назад</button>
+              <button class="calculator-button calculator-button--primary-color calculator-button--primary-position" type="button">Далее</button>
+            </div>
+
           </fieldset>
         </form>
       </div>
