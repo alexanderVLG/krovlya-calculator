@@ -12,9 +12,27 @@
   display: grid;
   gap: 28px;
   list-style-type: none;
+  min-height: 135px;
+  max-width: 810px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #e4e6ea;
+    border-radius: 53px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 178px;
   }
 }
 

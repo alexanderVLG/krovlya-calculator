@@ -65,6 +65,10 @@
     margin-bottom: 0;
   }
 
+  &--width {
+    max-width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     justify-self: auto;
@@ -147,8 +151,6 @@
 }
 
 .calculator-filter__roof-dimensions {
-  justify-content: center;
-
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
@@ -163,7 +165,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: fit-content;
-  max-width: 188px;
 
   & span {
     grid-column: 1/-1;
