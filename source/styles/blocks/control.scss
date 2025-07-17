@@ -49,3 +49,21 @@
   text-align: center;
   font-size: 14px;
 }
+
+.control__image {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  max-width: 395px;
+  height: auto;
+  margin-bottom: 24px;
+  border-radius: 8px;
+
+  &--step-first {
+    max-width: 295px;
+  }
+
+  &--step-second {
+    max-width: 187px;
+  }
+}

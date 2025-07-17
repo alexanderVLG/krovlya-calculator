@@ -62,3 +62,27 @@
     background-color: #eed6a4;
   }
 }
+
+.choose-color__text {
+  position: relative;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 18px;
+  color: $color-secondary-text;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    margin-left: 20px;
+    width: 22px;
+    height: 25px;
+    background-image: url("../../icons/point-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
